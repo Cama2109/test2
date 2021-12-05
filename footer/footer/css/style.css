@@ -1,0 +1,140 @@
+.container {
+    max-width: 1110px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-networks-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.social-networks-item ~ .social-networks-item {
+  margin-left: 30px; 
+}
+
+.social-networks-link {
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-menu-title {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.footer-menu-link {
+    font-family:" Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: #22343D;
+}
+
+.footer-form-text{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 280px;
+}
+
+.footer-search {
+    width: 300px;
+    padding: 10px 0;
+    border: 1px solid #22343;
+    margin-bottom: 30px;
+}
+
+.footer-button {
+    background-color: #02897A;
+    padding: 5px 10px;
+
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.social-networks-link:hover svg {
+    fill: rgb(34, 112, 175);
+    transform: rotate(360deg);
+    transition: all .5s ease-in-out;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #222;
+}
+
+.nav-item ~ .nav-item {
+    margin-left: 50px;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 4px;
+    margin-left: 30px;
+    background-color: transparent;
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-button {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .footer-button {
+        display: none;
+    }
+}
